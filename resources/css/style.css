@@ -10,7 +10,7 @@
 
 html {
     background-color: #fff;
-    color: #555;
+    color: #123d44;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
@@ -29,17 +29,94 @@ html {
     margin: 0 auto; 
 }
 
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+    transition: .2s;
+}
+
+.box:hover {
+    transform: scale(1.03);
+}
+
 /* ---------HEADING--------- */
+
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-weight: normal;
+}
 
 h1 {
     margin-top: 0;
     margin-bottom: 20px;
     color: #fff;
     font-size: 240%;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+ font-size: 180%;
+ word-spacing: 2px;
+ text-align: center;
+ margin: 0 auto;
+ margin-bottom: 30px;
+ color: #123d44;
+ letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 114%;
+    margin-bottom: 15px;
+    color: #123d44;
+    text-align: center;
+}
+
+h2:after {
+    display: block;
+    width: 200px;
+    height: 2px;
+    background-color: #bd0d24;
+    content: "";
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+/* ---------PARAGRAPHS--------- */
+
+.long-copy {
+    line-height: 133%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* ---------ICONS--------- */
+
+#awesome {
+    margin-bottom: 20px;
+}
+
+.icon-big {
+    font-size: 350%;
+    color: #bd0d24;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* ---------BOX--------- */
+
+.col {
+    border: rgba(189, 13, 36, 0.078) 1px solid;
 }
 
 /* ---------BUTTONS--------- */
@@ -84,6 +161,7 @@ h1 {
     border-color: #bd0d24;
 }
 
+
 /* ------------------------------------------- */
 /* HEADER */
 /* ------------------------------------------- */
@@ -104,7 +182,7 @@ header {
 }
 
 .logo {
-    height: 100px;
+    height: 95px;
     width: auto;
     float: left;
     margin-top: 19px;
@@ -119,7 +197,7 @@ header {
 
 .main-nav li {
     display: inline-block;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 .main-nav li a:link,
 .main-nav li a:visited {
@@ -130,6 +208,8 @@ header {
     border-bottom: 2px solid transparent;
     padding-bottom: 10px;
     transition: border-bottom .2s;
+    font-weight: normal;
+    letter-spacing: 2px;
 }
 
 .main-nav li a:hover {
