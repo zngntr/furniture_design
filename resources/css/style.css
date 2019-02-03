@@ -25,7 +25,7 @@ html {
 .row {
     max-width: 1140px;
     /* top and bottom is 0
-    left and right is auto*/
+    left and right is auto */
     margin: 0 auto; 
 }
 
