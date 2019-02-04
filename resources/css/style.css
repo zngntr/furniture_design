@@ -217,6 +217,58 @@ header {
     
 }
 
+
+
 .main-nav li a:active {
 
+}
+
+/* ------------------------------------------- */
+/* FEATURES */
+/* ------------------------------------------- */
+
+.section-features .long-copy {
+    margin-bottom: 57px;
+}
+
+
+/* ------------------------------------------- */
+/* WORKS */
+/* ------------------------------------------- */
+
+.section-works {
+    padding-top: 0;
+}
+
+.works-showcase {
+    padding-top: 57px;
+    list-style: none;
+    width: 100%;
+}
+
+.works-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.work-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.work-photo img {
+    opacity: .7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.19);
+    margin: 0;
+    transition: .5s;
+}
+
+.work-photo img:hover {
+    transform: scale(1.09);
+    opacity: 1;
 }
