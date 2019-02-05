@@ -1,5 +1,7 @@
 /* ------------------------------------------- */
+
 /* BASIC SETUP */
+
 /* ------------------------------------------- */
 
 * {
@@ -18,15 +20,16 @@ html {
 }
 
 /* ------------------------------------------- */
-/* REUSABLE COMPONENT*/
-/* ------------------------------------------- */
 
+/* REUSABLE COMPONENT*/
+
+/* ------------------------------------------- */
 
 .row {
     max-width: 1140px;
     /* top and bottom is 0
     left and right is auto */
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 section {
@@ -36,15 +39,21 @@ section {
 .box {
     padding: 1%;
     transition: .2s;
+    -webkit-box-shadow: 0px 3px 35px -15px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 3px 35px -15px rgba(0, 0, 0, 0.8);
 }
 
 .box:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
+    -webkit-box-shadow: 0px 6px 44px -5 rgba(0, 0, 0, 0.13);
+    box-shadow: 0px 6px 44px -5 rgba(0, 0, 0, 0.13);
 }
 
 /* ---------HEADING--------- */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 300;
     text-transform: uppercase;
     font-weight: normal;
@@ -60,13 +69,13 @@ h1 {
 }
 
 h2 {
- font-size: 180%;
- word-spacing: 2px;
- text-align: center;
- margin: 0 auto;
- margin-bottom: 30px;
- color: #123d44;
- letter-spacing: 1px;
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    color: #123d44;
+    letter-spacing: 1px;
 }
 
 h3 {
@@ -86,6 +95,7 @@ h2:after {
     margin-top: 30px;
     text-align: center;
 }
+
 /* ---------PARAGRAPHS--------- */
 
 .long-copy {
@@ -140,7 +150,6 @@ h2:after {
 
 .btn-ghost:link,
 .btn-ghost-:visited {
-    
     border: 1px solid #fff;
     margin-left: 10px;
     color: #fff;
@@ -161,13 +170,14 @@ h2:after {
     border-color: #bd0d24;
 }
 
-
 /* ------------------------------------------- */
+
 /* HEADER */
+
 /* ------------------------------------------- */
 
 header {
-    background-image: linear-gradient(to top, rgba(15, 15, 15, 0.7), rgba(15, 15, 15, 0.7)),  url(img/hero.jpg);
+    background-image: linear-gradient(to top, rgba(15, 15, 15, 0.7), rgba(15, 15, 15, 0.7)), url(img/hero.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -192,13 +202,13 @@ header {
     float: right;
     list-style: none;
     margin-top: 38px;
-    
 }
 
 .main-nav li {
     display: inline-block;
     margin-left: 1rem;
 }
+
 .main-nav li a:link,
 .main-nav li a:visited {
     color: #fff;
@@ -214,30 +224,29 @@ header {
 
 .main-nav li a:hover {
     border-bottom: 2px solid #bd0d24;
-    
 }
 
-
-
-.main-nav li a:active {
-
-}
+.main-nav li a:active {}
 
 /* ------------------------------------------- */
+
 /* FEATURES */
+
 /* ------------------------------------------- */
 
 .section-features .long-copy {
     margin-bottom: 57px;
 }
 
-
 /* ------------------------------------------- */
+
 /* WORKS */
+
 /* ------------------------------------------- */
 
 .section-works {
     padding-top: 0;
+    margin-bottom: 300px;
 }
 
 .works-showcase {
@@ -271,4 +280,76 @@ header {
 .work-photo img:hover {
     transform: scale(1.09);
     opacity: 1;
+}
+
+/* ------------------------------------------- */
+
+/* CIRCLE */
+
+/* ------------------------------------------- */
+
+.circle-container {
+    position: relative;
+    /* 1 */
+    width: 20em;
+    height: 20em;
+    padding: 0;
+    border-radius: 50%;
+    list-style: none;
+    /* 2 */
+    box-sizing: content-box;
+    /* 3 */
+    margin: 5em auto 0;
+    border: solid 40px #123d44;
+}
+
+.circle-container>* {
+    /* 4 */
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2em;
+    height: 2em;
+    margin: -1em;
+}
+
+.circle-container> :nth-of-type(1) {
+    transform: rotate(0deg) translate(11em) rotate(0deg);
+}
+
+.circle-container> :nth-of-type(2) {
+    transform: rotate(60deg) translate(11em) rotate(-60deg);
+}
+
+.circle-container> :nth-of-type(3) {
+    transform: rotate(120deg) translate(11em) rotate(-120deg);
+}
+
+.circle-container> :nth-of-type(4) {
+    transform: rotate(180deg) translate(11em) rotate(-180deg);
+}
+
+.circle-container> :nth-of-type(5) {
+    transform: rotate(240deg) translate(11em) rotate(-240deg);
+}
+
+.circle-container> :nth-of-type(6) {
+    transform: rotate(300deg) translate(11em) rotate(-300deg);
+}
+
+.circle-container i {
+    display: block;
+    font-size: 33px;
+    color: #7afd22;
+    width: 100%;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.circle-container img:hover {
+    filter: grayscale(0);
+    color: #7afd22;
 }
